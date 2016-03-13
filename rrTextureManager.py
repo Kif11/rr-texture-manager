@@ -65,6 +65,7 @@ class RRTextureManager(object):
             if copy:
                 self._copy_texture(str(original_path), str(new_path))
 
+# Test function
 def main():
 
     tm = RRTextureManager()
@@ -75,6 +76,3 @@ def main():
 
     tm.change_all_paths('/tmp')
     tm.revert_all_paths()
-
-if __name__ == '__main__':
-    main()
